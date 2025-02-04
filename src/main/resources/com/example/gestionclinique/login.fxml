@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="800.0" stylesheets="@../../../css/login-style.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.gestionclinique.LoginController">
+   <children>
+      <BorderPane layoutX="593.0" layoutY="222.0" prefHeight="0.0" prefWidth="0.0">
+      
+          <!-- Left Section: Logo -->
+          <VBox alignment="CENTER" prefWidth="400" styleClass="left-pane">
+
+    </VBox>
+      
+          <!-- Right Section: Login Form -->
+          <VBox alignment="CENTER" spacing="15" styleClass="right-pane">
+      
+              <HBox spacing="10">
+                  <Button fx:id="adminButton" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" styleClass="role-button" text="Admin" />
+                  <Button fx:id="patientButton" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" styleClass="role-button" text="Patient" />
+                  <Button fx:id="doctorButton" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" styleClass="role-button" text="Médecin" />
+              </HBox>
+      
+              <HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="41.0" prefWidth="278.0" spacing="10" styleClass="input-field">
+                  <Label text="📧" />
+                  <TextField fx:id="emailField" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" promptText="example@gmail.com" />
+              </HBox>
+      
+              <HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="41.0" prefWidth="278.0" spacing="10" styleClass="input-field">
+                  <Label text="🔑" />
+                  <PasswordField fx:id="passwordField" promptText="********" />
+              </HBox>
+      
+              <Button fx:id="loginButton" minHeight="-Infinity" minWidth="-Infinity" prefHeight="40.0" prefWidth="279.0" styleClass="role-button" text="Login" />
+      
+          </VBox>
+      </BorderPane>
+
+              <Label layoutX="457.0" layoutY="72.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" styleClass="welcome-text" text="Bienvenue dans" wrapText="true">
+         <font>
+            <Font name="Arial Bold" size="15.0" />
+         </font>
+      </Label>
+        <Label layoutX="609.0" layoutY="71.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="23.0" prefWidth="130.0" styleClass="welcome-highlight" text="MediConnect" />
+      <ImageView fitHeight="400.0" fitWidth="400.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../images/mediconnect_logo.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

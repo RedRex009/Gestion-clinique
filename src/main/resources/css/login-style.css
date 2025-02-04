@@ -1,0 +1,57 @@
+.root {
+    -fx-font-family: "Arial";
+}
+
+.left-pane {
+    -fx-background-color: #005F56;
+    -fx-alignment: center;
+    -fx-padding: 40px;
+}
+
+.logo-text {
+    -fx-font-size: 24px;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+}
+
+.right-pane {
+    -fx-background-color: #F8F9FA;
+    -fx-padding: 40px;
+    -fx-alignment: center;
+}
+
+.welcome-text {
+    -fx-font-size: 18px;
+    -fx-text-fill: black;
+}
+
+.welcome-highlight {
+    -fx-font-size: 20px;
+    -fx-text-fill: #00796B;
+    -fx-font-weight: bold;
+}
+
+.role-button {
+    -fx-background-color: #00796B;
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+    -fx-padding: 10px 20px;
+    -fx-border-radius: 5px;
+    -fx-cursor: hand;
+}
+
+.input-field {
+    -fx-padding: 8px;
+    -fx-border-color: #00796B;
+    -fx-border-radius: 5px;
+    -fx-background-color: white;
+}
+
+.login-button {
+    -fx-background-color: #004D40;
+    -fx-text-fill: white;
+    -fx-font-size: 16px;
+    -fx-padding: 10px 50px;
+    -fx-border-radius: 5px;
+    -fx-cursor: hand;
+}
